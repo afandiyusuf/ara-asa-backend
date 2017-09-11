@@ -49,6 +49,7 @@ class AssignerController extends Controller
     	$data = $req->input('data');
 
     	$assigner_data = new Assigner_data();
+        $assigner_data->assigner_id = $assigner_id;
     	$assigner_data->param = "raw_json";
     	$assigner_data->data = $data;
     	$assigner_data->save();
