@@ -13,8 +13,13 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('group','Api\Group@getAll');
+
+Route::prefix('assigner')->group(function(){
+	Route::post('create','Api\AssignerController@create');
+	Route::post('update','Api\AssignerController@update');
 });
 
-Route::get('group','Api\Group@getAll');
+Route::prefix('soal')->group(function(){
+	Route::post('get','Api\AssignerController@getAll');
+});
