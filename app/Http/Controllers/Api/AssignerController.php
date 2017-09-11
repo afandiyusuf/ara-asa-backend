@@ -42,7 +42,7 @@ class AssignerController extends Controller
     	}
     }
 
-    public function update(Request $update)
+    public function update(Request $req)
     {
     	//cek username and uniqueid yang sama
     	$assigner_id = $req->input('assigner_id');
