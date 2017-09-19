@@ -21,7 +21,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function()
     CRUD::resource('group', 'Admin\GroupCrudController');
   	CRUD::resource('assigner', 'Admin\AssignerCrudController');
   	CRUD::resource('assigner_data','Admin\Assigner_dataCrudController');
-
+  	CRUD::resource('assigner_data_old','Admin\Assigner_data_oldCrudController');
   	Route::get('/group/toogle_active/{group}', 'Admin\GroupCrudController@toogle_active');
+
   // [...] other routes
 });

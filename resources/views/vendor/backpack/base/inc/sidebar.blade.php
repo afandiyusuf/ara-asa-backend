@@ -23,6 +23,7 @@
           <li><a href="{{ url('admin/assigner') }}"><i class="fa fa-tag"></i> <span>Manage assigner</span></a></li>
           <li><a href="{{ url('admin/group') }}"><i class="fa fa-tag"></i> <span>Manage group</span></a></li>
           <li><a href="{{ url('admin/assigner_data') }}"><i class="fa fa-tag"></i> <span>Manage assigner data</span></a></li>
+          <li><a href="{{ url('admin/assigner_data_old') }}"><i class="fa fa-tag"></i><span>Manage assigner data v0.1</span></a></li>
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/elfinder') }}"><i class="fa fa-files-o"></i> <span>File manager</span></a></li>
           <!-- ======================================= -->
           <li class="header">{{ trans('backpack::base.user') }}</li>
